@@ -16,13 +16,7 @@ public class ParseIntegers {
                             .split(" "));
 
     public static void main(String[] args) {
-        Iterator<String> words = WORDS.iterator();
-        int sum = 0;
-        String justWords = "";
-        while (words.hasNext()) {
-            String next = words.next();
-            int number = Integer.parseInt(next);
-           Iterator<String> words = WORDS.iterator();
+         Iterator<String> words = WORDS.iterator();
         int sum = 0;
         String justWords = "";
         while (words.hasNext()) {
@@ -34,9 +28,6 @@ public class ParseIntegers {
                 justWords = justWords + " " + next;
             }
 
-        }
-        System.out.println("Sum is " + sum);
-        System.out.println("Just words:" + justWords);
         }
         System.out.println("Sum is " + sum);
         System.out.println("Just words:" + justWords);
